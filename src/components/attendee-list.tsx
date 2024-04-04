@@ -1,4 +1,4 @@
-import { Search, MoreHorizontal, ChevronsLeft, ChevronLeft, ChevronRight, ChevronsRight } from "lucide-react"
+import { Search, MoreHorizontal, ChevronsLeft, ChevronLeft, ChevronRight, ChevronsRight, Clipboard } from "lucide-react"
 import dayjs from "dayjs"
 import "dayjs/locale/pt-br"
 import relativeTime from "dayjs/plugin/relativeTime"
@@ -29,7 +29,6 @@ export function AttendeeList() {
         }
         return ''
     })
-    
     const [page, setPage] = useState(() => {
         const url = new URL(window.location.toString())
         if (url.searchParams.has('page')) {
@@ -38,10 +37,8 @@ export function AttendeeList() {
 
         return 1
     })
-
     const [total, setTotal] = useState(0)
     const [attendees, setAttendees] = useState<Attendee[]>([])
-
     const totalPages = Math.ceil(total / 10)
 
     useEffect(() => {
@@ -88,15 +85,12 @@ export function AttendeeList() {
     }
 
     function goToNextPage() {
-        // setPage(page + 1)
         setCurrentPage(page + 1)
     }
 
     function goToPreviousPage() {
         setCurrentPage(page - 1)
     }
-
-
 
     return(
         <div className="flex flex-col gap-4">
@@ -116,7 +110,7 @@ export function AttendeeList() {
                 <thead>
                     <tr className="border-b border-white/10">
                         <TableHeader style={{ width: 48 }}>
-                            <input className="size-4 bg-black/20 rounded border border-white/10" type="checkbox" />
+                            <input className="size-4 bg-black/20 rounded border border-white/10" type="checkbox"/>
                         </TableHeader>
 
                         <TableHeader>Código</TableHeader>
@@ -137,7 +131,15 @@ export function AttendeeList() {
                                 <TableCell>
                                     <div className="flex flex-col gap-1">
                                         <span className="font-semibold text-white">{attendees.name}</span>
-                                        <span>{attendees.email}</span>
+                                        <span 
+                                            className="cursor-pointer flex items-center gap-1"
+                                            onClick={() => {
+                                                navigator.clipboard.writeText(attendees.email.toLocaleLowerCase())
+                                            }}>
+                                            
+                                            {attendees.email.toLocaleLowerCase()}
+                                            <Clipboard className="size-4 text-zinc-500 hover:text-zinc-100"/>
+                                        </span>
                                     </div>
                                 </TableCell>
                                 <TableCell>{dayjs().to(attendees.createdAt)}</TableCell>
