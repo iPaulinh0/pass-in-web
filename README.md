@@ -41,9 +41,13 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 ### Front-End
 
 1. Ao clonar o repositório, basta instalar as dependências:
+```node
     npm i
+```
 2. Iniciar o servidor local:
+```
     npm run dev
+```    
 3. Abrir a url indicada no terminal: **EX: localhost:5173**
 
 ### Back-End
