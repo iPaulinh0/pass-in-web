@@ -34,20 +34,6 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 
 ## 🔧 Para rodar
 
-### Front-End
-
-1. Ao clonar o repositório, basta instalar as dependências:
-```node
-    npm i
-```
-2. Iniciar o servidor local:
-```
-    npm run dev
-```    
-3. Abrir a url indicada no terminal: **EX: localhost:5173**
-
-### Back-End
-
 É necessário fazer o clone do repositório back-end do projeto [DESSE LINK](https://github.com/rocketseat-education/nlw-unite-nodejs).
 
 1. Ao abrir o repositório, instale todas as dependências:
@@ -66,6 +52,7 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
     ```node
         npm run dev
     ```
+Ao iniciar o back-end, é só acessar o [LINK DO SITE:](https://pass-in-web-eight.vercel.app/)
 
 
 
