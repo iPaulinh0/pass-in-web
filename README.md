@@ -51,13 +51,21 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 É necessário fazer o clone do repositório back-end do projeto [DESSE LINK](https://github.com/rocketseat-education/nlw-unite-nodejs).
 
 1. Ao abrir o repositório, instale todas as dependências:
-    npm i
+    ```node
+        npm i
+    ```
 2. Crie um arquivo de variável de ambiente **.env** com os seguintes parâmetros:
-    DATABASE_URL="file:./dev.db"
+    ```
+        DATABASE_URL="file:./dev.db"
+    ```
 3. Rodar o comando seed para preencher o banco de dados com dados fictícios:
-    npx prisma db seed
+    ```node
+        npx prisma db seed
+    ```
 4. Por fim, basta iniciar o servidor:
-    npm run dev
+    ```node
+        npm run dev
+    ```
 
 
 
