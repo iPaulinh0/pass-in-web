@@ -14,7 +14,7 @@
 
 </br>
 
-<img alt="Print do site finalizado em um fundo azul" src="https://imgur.com/a/r3DJlY1" />
+<img alt="Print do site finalizado em um fundo azul" src="https://i.imgur.com/OD4Rcqa.png" />
 
 ## 🚀 Tecnologias
 
