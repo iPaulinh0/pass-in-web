@@ -12,11 +12,9 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
 
-<br>
+</br>
 
-<p align="center">
-  <img alt="projeto DevLinks" src="./assets/Cover.png" width="100%">
-</p>
+<img alt="Print do site finalizado em um fundo azul" src="https://imgur.com/a/r3DJlY1" />
 
 ## 🚀 Tecnologias
 
@@ -29,8 +27,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 No evento NLW Unite, nosso desafio foi criar um site com uma lista de participantes de um evento.
-
-- [Acesse o projeto finalizado, online](https://ipaulinh0.github.io/pass-in-web/)
 
 ## 🔖 Layout
 
